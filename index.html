@@ -7,9 +7,96 @@
     <link rel="stylesheet" href="Styles/styles.css">
     <link rel="stylesheet" href="">
 </head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .first-nav {
+        border: 1px solid white;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .second-nav {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid white;
+        background-color: black;
+        color: gold;
+    }
+    h3 {
+        color: white;
+        margin-top: 10px;
+    }
+    h4 {
+        text-align: center;
+        line-height: 200px;
+    }
+    .third-nav ul {
+        display: flex;
+        justify-content: flex-start;
+        border: 1px solid  black;
+        overflow: scroll;
+        column-gap: 20px;
+        padding: 15px 0px 15px 20px;
+        background-color: gold;
+    }
+    .third-nav li {
+        list-style: none;
+    }
+    .third-nav a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+    }
+    .adverstisement {
+        max-width: 1200px;
+        border: 1px solid black;
+        height: 250px;
+        margin: 10px auto;
+    }
+</style>
 <body>
-    <header>Spot Glitz Media</header>
-    <main></main>
+    <header>
+        <nav class="first-nav">
+            <div class="logo">
+                <!-- <img src="" alt=""> -->
+                 <h1>LOGO</h1>
+            </div>
+            <div class="hambuger-1">
+                <img src="Images/menu-bar.png" alt="" width="30">
+            </div>
+            <div class="search-button">
+                <img src="Images/search-icon.png" alt="" width="30">
+            </div>
+        </nav>
+        <nav class="second-nav">
+            <div class="web-name">
+            <h1>Spot Glitz <sub>Media</sub></h1>
+            </div>
+            <div class="hambuger-2">
+                <!-- <img src="Images/menu-bar-2.png" alt="" width="30"> -->
+                 <h3>Menu</h3>
+            </div>
+        </nav>
+        <nav class="third-nav">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Sport news</a></li>
+                <li><a href="">Live scores</a></li>
+                <li><a href="">Match Highlights</a></li>
+                <li><a href="">Events</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="adverstisement">
+            <!-- <img src="" alt=""> -->
+            <h4>Adverstisement</h4>
+        </div>
+    </main>
     <aside></aside>
     <footer></footer>
     <script src="Scripts/scripts.js"></script>
